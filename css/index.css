@@ -1,0 +1,380 @@
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.search{
+    width: 100%;
+    height:0.6rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.se-center{
+    width: 90%;
+    height: 0.4rem;
+    border: 1px #cccccc solid;
+    border-radius: 0.06rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.15rem;
+}
+.please{
+    flex: 3;
+    margin-left: 0.12rem;
+}
+/* .sp1{
+    flex: 0.5;
+} */
+.img1{
+    flex: 0.5;
+    margin-left: 0.16rem;
+}
+.img1 img{
+    width: 0.22rem;
+    height: 0.22rem;
+   
+}
+
+
+
+.hide{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;  /*接口*/
+}
+
+
+
+
+
+.secondList .list{
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.12rem;
+    z-index: 4;
+    position: relative;
+    background: #FFF;
+    /*/!*点击区域或价格等时候通过JavaScript改变定位方式就可以让导航排在最上方*!/*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+}
+
+.secondList .list li{
+    position: relative;
+}
+.secondList .list h2 a{
+    position: relative;
+}
+.secondList .list h2 span{
+    border-top: 5px solid #ccc;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    position: absolute;
+    top: 0.06rem;
+    right: -0.14rem;
+}
+
+/*添加active类名就可以改变小箭头的方向和颜色*/
+.secondList .list h2 .active span{
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #ff8a00;
+    border-left: 5px solid transparent;
+    top: 0.02rem;
+}
+.secondList .list h2 .active{
+    color: #ff8a00;
+}
+
+
+.area{
+    display: flex;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 1.45rem;
+    z-index: 3;
+    font-size: 0.12rem;
+    /*display: block;*/
+    display: none;
+}
+
+.area .title{
+   flex: 1;
+    background: #f0f0f0;
+    border-right: 1px solid #cccccc;
+    font-size: 0.12rem;
+    text-align: center;
+}
+.area .title h2{
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+}
+
+.area .title .active{
+    color: #ff8a00;
+    background: #fff;
+    margin-right: -1px;
+    border-right: 2px solid #fff;;
+}
+.area .hideList{
+    flex: 3;
+}
+
+.area .hideList ul li{
+    float: left;
+    width: 45%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    /*margin-left: 0.1rem;*/
+    box-sizing: border-box;
+
+}
+.area .hideList ul li .active{
+    color: #ff8a00;
+}
+
+
+.price{
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 1.45rem;
+    z-index: 3;
+    font-size: 0.12rem;
+    display: none;
+}
+.price li{
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-bottom: 1px solid #ccc;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+.price li:last-of-type{
+    border-bottom: none;
+}
+
+.house{
+    background: #fff;
+    padding-bottom: 0.2rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:1.45rem;
+    z-index: 3;
+    font-size: 0.12rem;
+    display: none;
+}
+.house li{
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-bottom: 1px solid #ccc;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+.house li:last-of-type{
+    border-bottom: none;
+}
+.house span{
+    width: 0.14rem;
+    height: 0.15rem;
+    float: right;
+    margin-top: 0.12rem;
+    margin-right: 0.2rem;
+    border: 1px solid #c5c3c3;
+}
+.house span.active{
+    border: 1px solid #ff8a00;
+    background: url("../image/SecondHandList/ok.png") center center no-repeat;
+
+}
+.house  .btnOK{
+    text-align: center;
+    background: #ff8a00;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+}
+
+
+
+.more{
+    background: #fff;
+    width: 100%;
+    padding: 0 0.2rem 0.2rem;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 1.45rem;
+    z-index: 3;
+    font-size: 0.12rem;
+    display: none;
+}
+.more h3{
+    padding: 0.2rem 0 0.12rem 0;
+    font-size: 0.14rem;
+}
+.more .childList{
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*flex-flow: wrap;*/
+    padding-bottom: 0.08rem;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+
+
+}
+.more .childList li{
+    float: left;
+    /*flex: 1;*/
+    width: 22%;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    border: 1px solid #cccccc;
+    text-align: center;
+    margin-left: 0.05rem;
+    margin-bottom: 0.12rem;
+    height: 0.25rem;
+    line-height: 0.25rem;
+    font-size: 0.1rem;
+
+
+}
+.more .childList li:first-of-type,.more .childList li:nth-of-type(5),.more .childList li:nth-of-type(9){
+    margin-left: 0;
+}
+.more .clear{
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+}
+.more .btnOK{
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    background: #ff8a00;
+}
+.more .btnOK a{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.area .childList{
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*flex-flow: wrap;*/
+    padding-bottom: 0.08rem;
+    /* border-bottom: 1px solid #ccc; */
+    overflow: hidden;
+}
+.area .childList li:nth-child(1){
+    margin-left: 0;
+}
+.area .childList li:last-child{
+    margin-left: 0;
+}
+.area .childList li{
+    float: left;
+    /*flex: 1;*/
+    width: 22%;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    border: 1px solid #cccccc;
+    text-align: center;
+    margin-left: 0.05rem;
+    margin-bottom: 0.12rem;
+    height: 0.25rem;
+    line-height: 0.25rem;
+    font-size: 0.16rem;
+}
+
+
+
+
+
+
+
+.big{
+    width: 100%;
+    /* border-bottom: 1px orange solid; */
+    height: 1.33rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.12rem;
+}
+.big-ct{
+    width: 90%;
+    height: 1.33rem;
+    border-bottom: 1px orange solid;
+    display: flex;
+    align-items: center;
+}
+.left{
+    
+    float: left;
+}
+.left img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.right{
+    float: left;
+    line-height: .22rem;
+    margin-left: 0.16rem;
+    
+}
+i{
+    color: orange;
+}
+.right p{
+    font-size: .16rem;
+}
+
+
+
+
+
+
+
+
+

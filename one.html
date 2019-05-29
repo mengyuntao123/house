@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/one.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+</head>
+
+<body>
+    <header>
+        <h1><img src="./image/index/logo.jpg"></h1>
+        <div class="icon">
+            <span><img src="./image/index/my.jpg"></span>
+            <span><img src="./image/index/xiazai.jpg"></span>
+        </div>
+    </header>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./image/index/banner.png"></div>
+            <div class="swiper-slide"><img src="./image/index/banner.png"></div>
+            <div class="swiper-slide"><img src="./image/index/banner.png"></div>
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="kuang">
+        <div class="ku-ct">
+             <span><img src="./image/index/seach.jpg"></span> 
+              <input type="search" placeholder="请输入小区名字">
+        </div>
+       
+      </div>
+      <section class="navList">
+            <nav>
+                <ul>
+                    <li><a href="#">二手房</a></li>
+                    <li><a href="./two.html">新房</a></li>
+                    <li><a href="#">租房</a></li>
+                    <li><a href="#">卖房</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="bann2">
+            <img src="./image/index/banner2.png">
+        </section>
+  <div class="hot">
+      <h2>热门房源</h2>
+      <h2>hot house</h2>
+  </div>
+
+<div class="pp">
+    </div> 
+<div class="list">
+ <ul class="lt">
+     <li class="aa on"><h1>热门关注</h1>
+     <div class="bottom">
+<div class="zu">
+     <p>北京二手房</p>
+     <p>北京二手房</p>
+     <p>北京二手房</p>
+ </div>
+<div class="zhao">
+    <p>租房无忧</p>
+    <p>租房无忧</p>
+    <p>租房无忧</p>
+</div>
+     </div>
+     
+    
+    </li>
+     <li class="bb"><h1>友情链接</h1>
+    <div class="bottom1">
+        <div class="zu1">
+             <p>北京yi手房</p>
+             <p>北京二手房</p>
+             <p>北京二手房</p>
+         </div>
+        <div class="zhao1">
+            <p>租房mei无忧</p>
+            <p>租房无忧</p>
+            <p>租房无忧</p>
+        </div>
+         </div>
+  
+    
+    </li>
+ </ul>
+ 
+ 
+</div>
+<footer style="margin-top: 1.8rem;" class="copyright">
+        <h2>北京找房无忧 > 首页</h2>
+        <div class="content">
+            <ul>
+                <li>
+                    <img src="image/index/apple.png" alt=""/>
+                    <div>
+                        <p>iPhone</p>
+                        <p>客户端</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/index/android.png" alt=""/>
+                    <div>
+                        <p>Android</p>
+                        <p>客户端</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="text">
+                <p>北京找房无忧房地产经纪公司</p>
+                <p>网络经营许可证京ICP备20160812号</p>
+            </div>
+        </div>
+    </footer>
+  
+
+
+</body>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/doT.min.js"></script>
+<script src="./jq/zepto.js"></script>
+<script src="./js/one.js"></script>
+<script id="interpolationtmpl" type="text-x-dot-template">
+{{~it.Ontario :value:index }}
+
+    <div class="big">
+        <div class="big-ct">
+        <div class="left">
+            <img src="{{=value.img}}">
+        </div>
+        <div class="right">
+           <h2>{{=value.title}}</h2>
+           <p class="six">{{=value.ceng}}</p>
+           <p style="color:gray"><span>{{=value.price}}</span><span style="color:orange;"> {{=value.total}}</span></p>
+           <p style="color:gray">{{=value.time}}</p>
+        </div>
+    </div>
+
+    </div>
+{{~}}
+
+
+
+</script>
+<!-- <script src="./data.json"></script> -->
+<script>
+  var mySwiper = new Swiper ('.swiper-container', {
+
+    autoplay: {
+    delay: 3000,
+    stopOnLastSlide: false,
+    disableOnInteraction: true,
+    
+    },
+
+
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+   
+  }) 
+
+</script>
+<script>
+function set(){
+var uiw=375;
+ winw=document.documentElement.clientWidth
+ var rate=winw/uiw;
+ document.documentElement.style.fontSize=rate*100+"px";
+ }
+ set()
+ window.onresize=set;
+ </script>
+</html>

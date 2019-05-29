@@ -1,0 +1,75 @@
+{
+    "Ontario":[
+        {
+        "img":"./image/SecondHandList/img1.png",
+        "title":"外大街 两室一厅 89平",
+        "ceng":"南北 高层/6层",
+        "price":"签约价格:13244/平",
+        "total":"1105万",
+        "time":"签约日期:2019年7月9日"
+    },
+
+        {
+            "img":"./image/SecondHandList/img2.png",
+            "title":"小孟村 两层别墅 300平",
+            "ceng":"南北 高层/6层",
+            "price":"签约价格:13244/平",
+            "total":"1105万",
+            "time":"签约日期:2019年7月9日"
+
+        },
+
+        {
+            "img":"./image/SecondHandList/img3.png",
+            "title":"金桥国际 一室一厅 63平",
+            "ceng":"南北 高层/6层",
+            "price":"签约价格:13244/平",
+            "total":"1105万",
+            "time":"签约日期:2019年7月9日"
+
+
+        },
+
+
+        {
+
+            "img":"./image/SecondHandList/img4.png",
+            "title":"社区 两层别墅 120平",
+            "ceng":"南北 高层/6层",
+            "price":"签约价格:13244/平",
+            "total":"1105万",
+            "time":"签约日期:2019年7月9日"
+
+
+        },
+
+
+        {
+
+            "img":"./image/SecondHandList/img5.png",
+            "title":"外大街 两室一厅 89平",
+            "ceng":"南北 高层/6层",
+            "price":"签约价格:13244/平",
+            "total":"1105万",
+            "time":"签约日期:2019年7月9日"
+
+
+
+        },
+
+
+
+        {
+            "img":"./image/SecondHandList/img6.png",
+            "title":"外大街 两室一厅 89平",
+            "ceng":"南北 高层/6层",
+            "price":"签约价格:13244/平",
+            "total":"1105万",
+            "time":"签约日期:2019年7月9日"
+
+
+
+
+        }
+    ]
+}
